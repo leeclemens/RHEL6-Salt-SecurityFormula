@@ -12,3 +12,7 @@ For example: The 3 rules governing /etc/shadow could be written as:
 but has been divided into 3 different .sls files, since they are divided into 3 separate rules by the STIG.
 This may change in the future if I re-organize the way I handle the rules( and I probably will) but currently
 that is how they will be organized, to make it easier to find the rule you are looking for.
+
+2) I've decided not to run "yum updates" on the system, as required by one of the STIG items
+in order to prevent this formula from interfering with a Systems normal patching schedule.
+
