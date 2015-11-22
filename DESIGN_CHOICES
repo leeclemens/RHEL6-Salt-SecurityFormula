@@ -1,0 +1,14 @@
+1) As a matter of design choice, there are a few items that could be performed in a single
+salt formula, that instead are divided into multiple .sls files.
+
+For example: The 3 rules governing /etc/shadow could be written as:
+
+/etc/shadow:
+ file.managed:
+  - user: root
+  - group: root
+  - mode: 0000
+
+but has been divided into 3 different .sls files, since they are divided into 3 separate rules by the STIG.
+This may change in the future if I re-organize the way I handle the rules( and I probably will) but currently
+that is how they will be organized, to make it easier to find the rule you are looking for.

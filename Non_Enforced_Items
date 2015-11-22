@@ -1,0 +1,13 @@
+# The following Items are not enforced by this security package.
+	STIG_ID			RULE_ID			Vuln_ID		DESC
+1) 	RHEL-06-000001	SV-50255r1_rule	v-38455		"/tmp is mounted on its own partition"
+2)	RHEL-06-000002	SV-50256r1_rule	V-38456		"/var is mounted on its own partition"
+3)	RHEL-06-000003	SV-50263r1_rule	V-38463		"/var/log is mounted on its own partition"
+4)	RHEL-06-000004	SV-50267r1_rule	V-38467		"/var/log/audit is mounted on its own partition"
+5)	RHEL-06-000008	SV-50276r3_rule	V-38476		"Vendor P-provided Cryptographic Certificates must be installed to verify the integrity of the system software"
+6)	RHEL-06-000284	SV-50467r2_rule	V-38666		"The System must use and update a DoD-Approved Virus Scan program"
+7)	RHEL-06-000011	SV-50281r1_rule	V-38481		"System security patches and updates must be installed and up-to date"
+8)	RHEL-06-000018	SV-65601r1_rule	V-51391		"A file integrity baseline must be created"
+9)	RHEL-06-000029	SV-50297r3_rule	V-38496		"Default operating system accounts, other than root, must be locked"
+10)	RHEL-06-000031	SV-50300r1_rule	V-38499		"The /etc passwd file must not contain password hashes"
+11)	RHEL-06-000032	SV-50301r2_rule	V-38500		"The root account must be the only account having a UID of 0"
