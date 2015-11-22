@@ -1,0 +1,8 @@
+# The following Items are not enforced by this security package.
+	STIG_ID			RULE_ID			Vuln_ID		DESC
+1) 	RHEL-06-000001	SV-50255r1_rule	v-38455		"/tmp is mounted on its own partition"
+2)	RHEL-06-000002	SV-50256r1_rule	V-38456		"/var is mounted on its own partition"
+3)	RHEL-06-000003	SV-50263r1_rule	V-38463		"/var/log is mounted on its own partition"
+4)	RHEL-06-000004	SV-50267r1_rule	V-38467		"/var/log/audit is mounted on its own partition"
+5)	RHEL-06-000008	SV-50276r3_rule	V-38476		"Vendor P-provided Cryptographic Certificates must be installed to verify the integrity of the system software"
+6)	RHEL-06-000284	SV-50467r2_rule	V-38666		"The System must use and update a DoD-Approved Virus Scan program"
