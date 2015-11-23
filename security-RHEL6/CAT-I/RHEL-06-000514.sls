@@ -17,7 +17,7 @@
     - pattern: nosignature.*
     - repl: ""
 
-/{{ pillar['roothome'] }}/.rpmrc:
+{{ pillar['roothome'] }}/.rpmrc:
   file.replace:
     - pattern: nosignature.*
     - repl: ""
