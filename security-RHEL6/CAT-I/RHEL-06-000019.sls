@@ -5,6 +5,8 @@
 /etc/hosts.equiv:
   file.absent
 
-{% for userdir in salt['cmd.run'(ls pillar['home']).split('\n') %}
-/home/{{ userdir }}/.rhosts:
+{% for userdir in salt['cmd.run']('ls /home').split('\n') %}
+/home{{ userdir }}/.rhosts:
   file.absent
+
+{% endfor %}
