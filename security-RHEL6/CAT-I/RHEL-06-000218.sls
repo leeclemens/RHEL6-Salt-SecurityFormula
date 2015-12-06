@@ -2,6 +2,7 @@
 # STIG ID: RHEL-06-000218  Rule ID: SV-50403r2_rule  Vuln ID: V-38602
 # Severity: CAT I Class: Unclass
 
-rlogin:
+RHEL-06-000218:
   service.dead:
+    - name: rlogin
     - enable: False

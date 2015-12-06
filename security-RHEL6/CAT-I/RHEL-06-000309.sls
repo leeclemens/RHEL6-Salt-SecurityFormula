@@ -2,7 +2,8 @@
 # STIG ID: RHEL-06-000309  Rule ID: SV-50478r1_rule  Vuln ID: V-38677
 # Severity: CAT I Class: Unclass
 
-/etc/exports:
+RHEL-06-000309:
   file.replace:
+    - name: /etc/exports
     - pattern: insecure_locks
     - repl: ""

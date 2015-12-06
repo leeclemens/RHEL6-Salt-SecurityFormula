@@ -2,18 +2,21 @@
 # STIG ID: RHEL-06-000514  Rule ID: SV-50262r1_rule  Vuln ID: V-38462
 # Severity: CAT I Class: Unclass
 
-/etc/rpmrc:
+RHEL-06-000514-p1:
   file.replace:
+    - name: /etc/rpmrc
     - pattern: nosignature.*
     - repl: ""
 
-/usr/lib/rpm/rpmrc:
+RHEL-06-000514-p2:
   file.replace:
+    - name /usr/lib/rpm/rpmrc
     - pattern: nosignature.*
     - repl: ""
 
-/usrlib/rpm/redhat/rpmrc:
+RHEL-06-000514-p3:
   file.replace:
+    - name: /usr/lib/rpm/redhat/rpmrc
     - pattern: nosignature.*
     - repl: ""
 
