@@ -2,6 +2,7 @@
 # STIG ID: RHEL-06-000038  Rule ID: SV-50249r1_rule  Vuln ID: V-38449
 # Severity: CAT II Class: Unclass
 
-/etc/gshadow:
+RHEL-06-000038:
   file.managed:
+    - name: /etc/gshadow
     - mode: 0000

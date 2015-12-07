@@ -3,6 +3,7 @@
 # Severity: CAT II Class: Unclass
 #
 
-/etc/gshadow:
+RHEL-06-000037:
   file.managed:
+    - name: /etc/gshadow
     - group: root

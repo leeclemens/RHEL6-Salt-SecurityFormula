@@ -3,7 +3,8 @@
 # Severity: CAT II Class: Unclass
 #
 
-/etc/securetty:
+RHEL-06-000027:
   file.replace:
+    - name: /etc/securetty
     - pattern: ^vc.*
     - repl: ""

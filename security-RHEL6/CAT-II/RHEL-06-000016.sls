@@ -2,6 +2,7 @@
 # STIG ID: RHEL-06-000016  Rule ID: SV-50290r1_rule  Vuln ID: V-38489
 # Severity: CAT II Class: Unclass
 
-aide:
-  pkg.installed
+RHEL-06-000016:
+  pkg.installed:
+    - name: aide
 

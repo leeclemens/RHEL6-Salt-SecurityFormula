@@ -2,6 +2,7 @@
 # STIG ID: RHEL-06-000035  Rule ID: SV-50305r1_rule  Vuln ID: V-38504
 # Severity: CAT II Class: Unclass
 
-/etc/shadow:
+RHEL-06-000035:
   file.managed:
+    - name: /etc/shadow
     - mode: 0000

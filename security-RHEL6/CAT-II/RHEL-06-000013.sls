@@ -2,7 +2,8 @@
 # STIG ID: RHEL-06-000013  Rule ID: SV-50283r1_rule  Vuln ID: V-38483
 # Severity: CAT II Class: Unclass
 
-/etc/yum.conf:
+RHEL-06-000013:
   file.replace:
+    - name: /etc/yum.conf
     - pattern: ^gpgcheck.*
     - repl: "gpgcheck=1"
