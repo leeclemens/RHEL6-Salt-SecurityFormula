@@ -27,3 +27,11 @@ RHEL-06-000161: rotate
 # RHEL-06-000163: The audit system must switch the system to single user mode when available audit storage volumn becomes dangerously low
 # default/correct value: single
 RHEL-06-000163: single
+
+# For RHEL-06-000248, NTPD configuration, append all your ntp servers to this line in the format you want them to take
+ntpservers:
+  "server ntp1.metashell.net"
+  "server ntp2.metashell.net"
+
+# RHEL-06-000253, Cacert configuration for ldapconf. The location of your ca cert should be here
+cacert: "tls_cacertdir /etc/pki/tls/CA"
