@@ -2,10 +2,15 @@
 # STIG ID: RHEL-06-000302  Rule ID: SV-50496r2_rule  Vuln ID: V-38695
 # Severity: CAT II Class: Unclass
   
-RHEL-06-000302:
+# Rule Title:  The operating system must employ automated mechanisms, per organization defined frequency, to detect the addition of unauthorized components/devices into the operating system.
+#STIG ID: RHEL-06-000303  Rule ID: SV-50497r2_rule  Vuln ID: V-38696
+#Severity: CAT II Class: Unclass
+
+RHEL-06-000302-303:
    cron.present:
      - name: /usr/sbin/aide --check
      - user: root
      - hour: 23
      - minute: 1
+     - dayweek: 6
      - comment: "# RHEL-06-000302: Run AIDE Daily"
