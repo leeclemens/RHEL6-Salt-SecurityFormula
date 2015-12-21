@@ -28,6 +28,9 @@ RHEL-06-000161: rotate
 # default/correct value: single
 RHEL-06-000163: single
 
+# RHEL-06-000311: auditd.conf space_left. Adjust based on the size of your /var/log/audit partition. number below is arbitrary
+RHEL-06-000311: 300
+
 # For RHEL-06-000248, NTPD configuration, append all your ntp servers to this line in the format you want them to take
 ntpservers:
   "server ntp1.metashell.net"
