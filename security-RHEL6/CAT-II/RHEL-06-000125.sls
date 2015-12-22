@@ -2,15 +2,8 @@
 # STIG ID: RHEL-06-000125  Rule ID: SV-50316r3_rule  Vuln ID: V-38515
 # Severity: CAT II Class: Unclass
 
-{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}:
-  file.replace:
-    - pattern: ^install sctp.*
-    - repl: "install sctp /bin/true"
-    - append_if_not_present: True
 
 RHEL-06-000098:
-  file.replace:
-    - name: /etc/modprobe.conf
-    - pattern: ^install sctp.*
-    - repl: "install sctp /bin/true"
-    - append_if_not_present: True
+  file.append:
+    - name: "/etc/modprobe.d/RHEL-06-000098"
+    - text: "install sctp /bin/true"
