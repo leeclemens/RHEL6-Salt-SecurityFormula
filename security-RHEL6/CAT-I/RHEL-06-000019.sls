@@ -4,7 +4,7 @@
 
 RHEL-06-000019:
   file.absent:
-    - /etc/hosts.equiv
+    - name: /etc/hosts.equiv
 
 {% for userdir in salt['cmd.run']('ls '+pillar['home']).split('\n') %}
 RHEL-06-000019-{{ userdir }}:
