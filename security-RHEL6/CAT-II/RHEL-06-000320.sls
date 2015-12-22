@@ -5,6 +5,6 @@
 
 RHEL-06-000320:
   iptables.set_policy:
-    - table: forward
-    - family: ipv4
-    - policy: drop
+    - chain: FORWARD
+    - family: IPV4
+    - policy: DROP
