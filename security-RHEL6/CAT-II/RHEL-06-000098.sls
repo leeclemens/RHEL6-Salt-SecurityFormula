@@ -5,18 +5,22 @@
 
 {% if pillar['ipv6'] == 'True' %}
 {% else %}
-{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
-{{ file }}:
-  file.replace:
-    - pattern: ^options ipv6 disable=.*
-    - repl: "options ipv6 disable={{ pillar['disableipv6'] }}"
-    - append_if_not_found: True
-{% endfor %}
-RHEL-06-000098:
-  file.replace:
-    - name: /etc/modprobe.conf
-    - pattern: ^options ipv6 disable=.*
-    - repl: "options ipv6 disable={{ pillar['disableipv6'] }}"
-    - append_if_not_found: True
+#{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
+#{{ file }}:
+#  file.replace:
+#    - pattern: ^options ipv6 disable=.*
+#    - repl: "options ipv6 disable={{ pillar['disableipv6'] }}"
+#    - append_if_not_found: True
+#{% endfor %}
 
+#RHEL-06-000098:
+#  file.replace:
+#    - name: /etc/modprobe.conf
+#    - pattern: ^options ipv6 disable=.*
+#    - repl: "options ipv6 disable={{ pillar['disableipv6'] }}"
+#    - append_if_not_found: True
+RHEL-06-000098:
+   file.append:
+     - name: /etc/modprobe.d/RHEL-06-000098
+     - text: "options ipv6 disable={{ pillar['disableipv6'] }}"
 {% endif %}
