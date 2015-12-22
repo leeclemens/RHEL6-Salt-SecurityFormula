@@ -5,5 +5,5 @@
 
 RHEL-06-000522:
   file.managed:
-    - name: {{ auditlog }}
+    - name: {{ pillar['auditlogs'] }}
     - group: root
