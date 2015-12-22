@@ -6,7 +6,7 @@
 RHEL-06-000290:
   file.replace:
     - name: /etc/inittab
-    - pattern: ^.*initdefault.*
+    - pattern: ^[^#]*initdefault.*
     {% if pillar['gui'] == 'True' %}
     - repl: "id:5:initdefault:"
     {% else %}
