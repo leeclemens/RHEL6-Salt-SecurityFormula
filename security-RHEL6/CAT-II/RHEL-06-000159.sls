@@ -7,5 +7,5 @@ RHEL-06-000159:
   file.replace:
     - name: /etc/audit/auditd.conf
     - pattern: num_logs =.*
-    - repl: "num_logs = " + {{ pillar['RHEL-06-000159'] }}
-    - append_if_not_present: True
+    - repl: "num_logs = {{ pillar['RHEL-06-000159'] }}"
+    - append_if_not_found: True
