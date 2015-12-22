@@ -7,7 +7,8 @@
 # Severity: CAT II Class: Unclass
 #
 #
-{% for target in salt['cmd.run']('ls '+pillar['auditlogs']).split('\n') %}:
+{% for target in salt['cmd.run']('ls '+pillar['auditlogs']).split('\n') %}
+{{ target }}:
   file.managed:
     - user: root
     - mode: 640
