@@ -7,4 +7,4 @@ RHEL-06-000161:
     - name: /etc/audit/auditd.conf
     - pattern: max_log_file_action =.*
     - repl: "max_log_file_action = {{ pillar['RHEL-06-000161'] }}"
-    - append_if_not_present: True
+    - append_if_not_found: True
