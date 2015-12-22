@@ -2,18 +2,7 @@
 #STIG ID: RHEL-06-000124  Rule ID: SV-50315r3_rule  Vuln ID: V-38514
 #Severity: CAT II Class: Unclass
 
-
-#{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
-#{{ file }}
 RHEL-06-000124:
   file.append:
-    - name: /etc/modprobe.d/RHEL-06-000124
+    - name: "/etc/modprobe.d/RHEL-06-000124"
     - text: "install dccp /bin/true"
-#{% endfor %}
-
-#RHEL-06-000098:
-#  file.replace:
-#    - name: /etc/modprobe.conf
-#    - pattern: ^install dccp.*
-#    - repl: "install dccp /bin/true"
-#    - append_if_not_present: True
