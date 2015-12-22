@@ -38,3 +38,6 @@ ntpservers:
 
 # RHEL-06-000253, Cacert configuration for ldapconf. The location of your ca cert should be here
 cacert: "tls_cacertdir /etc/pki/tls/CA"
+
+# Referenced in RHEL-06-000383
+auditlogs = "/var/log/audit/"
