@@ -3,7 +3,7 @@
 # Severity: CAT II Class: Unclass
 
 
-RHEL-06-000098:
+RHEL-06-000125:
   file.append:
-    - name: "/etc/modprobe.d/RHEL-06-000098"
+    - name: "/etc/modprobe.d/RHEL-06-000125"
     - text: "install sctp /bin/true"
