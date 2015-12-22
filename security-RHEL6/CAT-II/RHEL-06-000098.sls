@@ -3,7 +3,7 @@
 # Severity: CAT II Class: Unclass
 #
 
-{% if pillar['ipv6'] = 'True' %}
+{% if pillar['ipv6'] == 'True' %}
 {% else %}
 {% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}:
   file.replace:
