@@ -7,7 +7,8 @@ RHEL-06-000019:
     - /etc/hosts.equiv
 
 {% for userdir in salt['cmd.run']('ls '+pillar['home']).split('\n') %}
-/home{{ userdir }}/.rhosts:
-  file.absent
+{{ userdir }}:
+  file.absent:
+     - name: "/home/{{userdir }}/.rhosts"
 
 {% endfor %}
