@@ -10,7 +10,7 @@
     - pattern: ^options ipv6 disable=.*
     - repl: "options ipv6 disable=" + {{ pillar['disableipv6'] }}
     - append_if_not_found: True
-
+{% endfor %}
 RHEL-06-000098:
   file.replace:
     - name: /etc/modprobe.conf
