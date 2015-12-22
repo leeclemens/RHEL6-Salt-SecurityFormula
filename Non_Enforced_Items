@@ -12,3 +12,5 @@
 10)	RHEL-06-000031	SV-50300r1_rule			V-38499		"The /etc passwd file must not contain password hashes"
 11)	RHEL-06-000032	SV-50301r2_rule			V-38500		"The root account must be the only account having a UID of 0"
 12)	RHEL-06-000292	SV-50480r2_rule			V-38679		"The DHCP Client must be disabled if not needed"
+13)	RHEL-06-000349	SV-50396r3_rule			V-38595		"The system must be configured to require the use of a CAC, PIV compliant hardware token, or Alternate Logon Token (ALT) for authentication."
+
