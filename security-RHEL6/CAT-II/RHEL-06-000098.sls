@@ -5,7 +5,8 @@
 
 {% if pillar['ipv6'] == 'True' %}
 {% else %}
-{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}:
+{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
+{{ file }}:
   file.replace:
     - pattern: ^options ipv6 disable=.*
     - repl: "options ipv6 disable=" + {{ pillar['disableipv6'] }}
