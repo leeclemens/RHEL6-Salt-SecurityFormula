@@ -10,12 +10,12 @@ disableipv6: 1
   #
 
 rsyslogfiles:
-  "/var/log/messages"
-  "/var/log/secure"
-  "/var/log/maillog"
-  "/var/log/cron"
-  "/var/log/spooler"
-  "/var/log/boot.log"
+  messages: "/var/log/messages"
+  secure: "/var/log/secure"
+  maillog: "/var/log/maillog"
+  cron: "/var/log/cron"
+  spooler: "/var/log/spooler"
+  boot: "/var/log/boot.log"
 
 
 # RHEL-06-000159: Auditd Log retention, 5+ is the recomended value,
@@ -33,8 +33,8 @@ RHEL-06-000311: 300
 
 # For RHEL-06-000248, NTPD configuration, append all your ntp servers to this line in the format you want them to take
 ntpservers:
-  "server ntp1.metashell.net"
-  "server ntp2.metashell.net"
+  server1: "server ntp1.metashell.net"
+  server2: "server ntp2.metashell.net"
 
 # RHEL-06-000253, Cacert configuration for ldapconf. The location of your ca cert should be here
 cacert: "tls_cacertdir /etc/pki/tls/CA"
