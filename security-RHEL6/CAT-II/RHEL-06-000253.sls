@@ -7,5 +7,5 @@ RHEL-06-000253:
   file.replace:
     - name: /etc/pam_ldap.conf
     - pattern: ^tls_cacert.*
-    - repl: {{cacert}}
+    - repl: {{ pillar['cacert'] }}
     - append_if_not_found: True
