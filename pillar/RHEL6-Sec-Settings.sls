@@ -1,10 +1,17 @@
 # home Directorsy
 home: /home
 roothome: /root
+
+Does your system use a gui?
 gui: True
+
 # Default: 1, disabled IPv6 support in kernel, this is the proper setting. Only change to 0 if you use ipv6 
 # Which is a finding under RHEL-06-000098
 disableipv6: 1
+
+# For RHEL-06-000098, If set to true it will skip the STIG item, only set to true if ipv6 is in use
+ipv6: False
+
 
 # The following should be a list of logfiles listed in /etc/rsyslog. They should be owned by root:
   #
