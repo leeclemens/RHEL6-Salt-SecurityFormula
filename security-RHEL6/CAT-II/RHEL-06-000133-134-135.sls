@@ -10,10 +10,11 @@
 # STIG ID: RHEL-06-000135  Rule ID: SV-50424r2_rule  Vuln ID: V-38623
 # Severity: CAT II Class: Unclass
 
-{% logtype, file in pillar.get('rsyslogfiles', {}).items() %}
+{% for logtype, file in pillar.get('rsyslogfiles', {}).items() %}
 {{logtype}}:
   file.managed:
     - name: {{file}}
     - user: root
     - group: root
     - mode: 600
+{% endfor %}
