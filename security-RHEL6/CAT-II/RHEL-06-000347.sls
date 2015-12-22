@@ -5,6 +5,6 @@
 
 {% for target in salt['cmd.run']('find '+pillar['roothome']+' '+pillar['home']+ ' -xdev -name .netrc').split('\n') %}
 {{ target }}:
-  file.absent
-
+   file.absent
+     - name {{ target }}
 {% endfor %}
