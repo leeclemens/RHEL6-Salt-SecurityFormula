@@ -6,5 +6,5 @@ RHEL-06-000311:
   file.replace:
     - name: /etc/audit/auditd.conf
     - pattern: ^space_left.*
-    - repl: "space_left = " + {{RHEL-06-000311}}
+    - repl: "space_left = {{RHEL-06-000311}}"
     - append_if_not_found: True
