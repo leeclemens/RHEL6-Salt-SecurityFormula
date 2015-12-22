@@ -25,7 +25,7 @@ RHEL-06-000202-4:
   file.replace:
     - name: /etc/audit/audit.rules
     - pattern: .*init_module.*delete_module.*
-    {% if grains['cpuarch:x86_64'] %}
+    {% if grains['cpuarch'] == 'x86_64' %}
     - repl: "-a always,exit -F arch=b64 -S init_module -S delete_module -k modules"
     {% else %}
     - repl: "-a always,exit -F arch=b32 -S init_module -S delete_module -k modules"
