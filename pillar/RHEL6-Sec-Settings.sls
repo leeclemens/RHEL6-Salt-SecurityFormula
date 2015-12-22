@@ -1,7 +1,7 @@
 # home Directorsy
 home: /home
 roothome: /root
-
+gui: True
 # Default: 1, disabled IPv6 support in kernel, this is the proper setting. Only change to 0 if you use ipv6 
 # Which is a finding under RHEL-06-000098
 disableipv6: 1
