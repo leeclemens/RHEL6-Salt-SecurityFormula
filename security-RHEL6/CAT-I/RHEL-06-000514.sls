@@ -10,7 +10,7 @@ RHEL-06-000514-p1:
 
 RHEL-06-000514-p2:
   file.replace:
-    - name /usr/lib/rpm/rpmrc
+    - name: /usr/lib/rpm/rpmrc
     - pattern: nosignature.*
     - repl: ""
 
