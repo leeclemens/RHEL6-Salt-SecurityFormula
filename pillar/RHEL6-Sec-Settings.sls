@@ -41,3 +41,6 @@ cacert: "tls_cacertdir /etc/pki/tls/CA"
 
 # Referenced in RHEL-06-000383
 auditlogs = "/var/log/audit/"
+
+# RHEL-06-000510 - auditd.conf disk_full_action. Acceptable settings are: syslog, exec, single, or halt
+RHEL-06-000510: halt
