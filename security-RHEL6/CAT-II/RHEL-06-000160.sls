@@ -6,5 +6,5 @@ RHEL-06-000160:
   file.replace:
     - name: /etc/audit/auditd.conf
     - pattern: max_log_file =.*
-    - repl: "max_log_file = " + {{ pillar['RHEL-06-000160'] }}
-    - append_if_not_present: True
+    - repl: "max_log_file = {{ pillar['RHEL-06-000160'] }}"
+    - append_if_not_found: True
