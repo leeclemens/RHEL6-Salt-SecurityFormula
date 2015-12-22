@@ -4,5 +4,5 @@
 
 RHEL-06-000385:
   file.directory:
-    - name: {{ auditlogs }}
+    - name: {{ pillar['auditlogs'] }}
     - dir_mode: 755
