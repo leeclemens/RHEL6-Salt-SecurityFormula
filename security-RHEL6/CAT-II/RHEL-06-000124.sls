@@ -3,17 +3,17 @@
 #Severity: CAT II Class: Unclass
 
 
-{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
-{{ file }}:
-  file.replace:
-    - pattern: ^install dccp.*
-    - repl: "install dccp /bin/true"
-    - append_if_not_present: True
-{% endfor %}
+#{% for file in salt['cmd.run']('ls /etc/modprobe.d/').split('\n') %}
+#{{ file }}
+RHEL-06-000124:
+  file.append:
+    - name: /etc/modprobe.d/RHEL-06-000124
+    - text: "install dccp /bin/true"
+#{% endfor %}
 
-RHEL-06-000098:
-  file.replace:
-    - name: /etc/modprobe.conf
-    - pattern: ^install dccp.*
-    - repl: "install dccp /bin/true"
-    - append_if_not_present: True
+#RHEL-06-000098:
+#  file.replace:
+#    - name: /etc/modprobe.conf
+#    - pattern: ^install dccp.*
+#    - repl: "install dccp /bin/true"
+#    - append_if_not_present: True
