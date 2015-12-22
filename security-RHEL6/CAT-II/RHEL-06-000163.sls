@@ -6,5 +6,5 @@ RHEL-06-000163:
   file.replace:
     - name: /etc/audit/auditd.conf
     - pattern: admin_space_left_action =.*
-    - repl: "admin_space_left_action = " + {{ pillar['RHEL-06-000163'] }}
+    - repl: "admin_space_left_action = {{ pillar['RHEL-06-000163'] }}"
     - append_if_not_present: True
