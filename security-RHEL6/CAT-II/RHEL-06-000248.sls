@@ -7,3 +7,4 @@
   file.append:
     - name: /etc/ntp.conf
     - text: {{server}}
+{% endfor %}
