@@ -2,7 +2,7 @@
 home: /home
 roothome: /root
 
-Does your system use a gui?
+#Does your system use a gui?
 gui: True
 
 # Default: 1, disabled IPv6 support in kernel, this is the proper setting. Only change to 0 if you use ipv6 
