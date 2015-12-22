@@ -3,7 +3,7 @@
 # Severity: CAT II Class: Unclass
 
 
-{% for target in salt['cmd.run']('find '+pillar['roothome']+' '+pillar['home']+ ' -xdev -name .netrc').split('\n') %}
+{% for target in salt['cmd.run']('find '+pillar['roothome']+' -xdev -name .netrc').split('\n') %}
 {{ target }}:
    file.absent:
      - name: {{ target }}
