@@ -7,4 +7,4 @@ RHEL-06-000097:
     - name: /etc/sysctl.conf
     - pattern: ^net\.ipv4\.conf\.default\.rp_filter.*
     - repl: "net.ipv4.conf.default.rp_filter = 1"
-   - append_if_not_found: True
+    - append_if_not_found: True
