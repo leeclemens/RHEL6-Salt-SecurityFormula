@@ -12,3 +12,5 @@
   file.managed:
     - user: root
     - mode: 640
+    
+{% endfor %}
