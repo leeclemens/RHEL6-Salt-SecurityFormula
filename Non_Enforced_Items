@@ -15,3 +15,4 @@
 13)	RHEL-06-000349	SV-50396r3_rule		V-38595		"The system must be configured to require the use of a CAC, PIV compliant hardware token, or Alternate Logon Token (ALT) for authentication."
 14)	RHEL-06-000504	SV-50289r1_rule		V-38488		The operating system must conduct backups of user-level information contained in the operating system per organization defined frequency to conduct backups consistent with recovery time and recovery point objectives."
 15)	RHEL-06-000505	SV-50287r1_rule		v-38486		"The operating system must conduct backups of system-level information contained in the information system per organization defined frequency to conduct backups that are consistent with recovery time and recovery point objectives."
+16)	RHEL-06-000524 	SV-50239r1_rule		v-38439		"The system must provide automated support for account management functions."
