@@ -9,4 +9,4 @@ RHEL-06-000086:
     - name: /etc/sysctl.conf
     - pattern: ^net\.ipv4\.conf\.all\.secure_redirects.*
     - repl: "net.ipv4.conf.all.secure_redirects = 0"
-    - append_if_not_present: True
+    - append_if_not_found: True
