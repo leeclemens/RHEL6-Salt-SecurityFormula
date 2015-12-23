@@ -5,5 +5,5 @@
 
 RHEL-06-000125:
   file.append:
-    - name: "/etc/modprobe.d/RHEL-06-000125"
+    - name: "/etc/modprobe.d/RHEL-06-000125.conf"
     - text: "install sctp /bin/true"
