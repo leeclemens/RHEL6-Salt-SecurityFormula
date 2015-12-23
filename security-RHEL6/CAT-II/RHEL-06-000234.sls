@@ -7,5 +7,5 @@ RHEL-06-000234:
     - name: /etc/ssh/sshd_config
     - pattern: ^IgnoreRhosts.* 
     - repl: "IgnoreRhosts yes"
-    - append_if_not_present: True
+    - append_if_not_found: True
 
