@@ -4,5 +4,5 @@
 
 RHEL-06-000127:
   file.append:
-    - name: "/etc/modprobe.d/RHEL-06-000127"
+    - name: "/etc/modprobe.d/RHEL-06-000127.conf"
     - text: "install tipc /bin/true"
