@@ -5,6 +5,7 @@
 
 RHEL-06-000320:
   iptables.set_policy:
+    - table: filter
     - chain: FORWARD
     - family: IPV4
     - policy: DROP
