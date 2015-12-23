@@ -4,5 +4,5 @@
 
 RHEL-06-000503:
   file.append:
-    - name: /etc/modprobe.d/RHEL-06-000503
+    - name: "/etc/modprobe.d/RHEL-06-000503.conf"
     - text: "install usb-storage /bin/true"
