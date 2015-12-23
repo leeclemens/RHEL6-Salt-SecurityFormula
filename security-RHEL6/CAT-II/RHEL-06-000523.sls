@@ -4,6 +4,7 @@
 
 RHEL-06-000523:
   iptables.set_policy:
+    - table: filter
     - chain: INPUT
     - policy: DROP
     - family: ipv6
