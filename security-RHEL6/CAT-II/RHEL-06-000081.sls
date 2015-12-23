@@ -7,4 +7,4 @@ RHEL-06-000081:
     - name: /etc/sysctl.conf
     - pattern: ^net\.ipv4\.conf\.all\.send_redirects.*
     - repl: "net.ipv4.conf.all.send_redirects = 0"
-    - append_if_not_present: True
+    - append_if_not_found: True
