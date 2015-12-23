@@ -7,4 +7,4 @@ RHEL-06-000095:
     - name: /etc/sysctl.conf
     - pattern: ^net\.ipv4\.tcp_syncookies.*
     - repl: "net.ipv4.tcp_syncookies = 1"
-    - append_if_not_present: True
+    - append_if_not_found: True
