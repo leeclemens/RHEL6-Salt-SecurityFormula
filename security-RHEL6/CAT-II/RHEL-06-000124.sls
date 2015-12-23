@@ -4,5 +4,5 @@
 
 RHEL-06-000124:
   file.append:
-    - name: "/etc/modprobe.d/RHEL-06-000124"
+    - name: "/etc/modprobe.d/RHEL-06-000124.conf"
     - text: "install dccp /bin/true"
