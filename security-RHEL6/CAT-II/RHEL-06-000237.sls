@@ -7,4 +7,4 @@ RHEL-06-000237:
     - name: /etc/ssh/sshd_config
     - pattern: ^PermitRootLogin.*
     - repl: "PermitRootLogin no"
-    - append_if_not_present: True
+    - append_if_not_found: True
