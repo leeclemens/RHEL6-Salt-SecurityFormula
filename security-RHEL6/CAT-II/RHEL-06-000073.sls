@@ -5,5 +5,5 @@
 RHEL-06-000073:
   file.managed:
     - name: /etc/issue
-    - source: salt://{{ sls }}/RHEL-06-000073-source
+    - source: salt://{{ slspath }}/RHEL-06-000073-source
      
