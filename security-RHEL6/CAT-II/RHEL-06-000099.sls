@@ -7,4 +7,4 @@ RHEL-06-000099:
     - name: /etc/sysctl.conf
     - pattern: ^net.ipv6.conf.default.accept_redirects.*
     - repl: "net.ipv6.conf.default.accept_redirects = 0"
-    - append_if_not_present: True
+    - append_if_not_found: True
