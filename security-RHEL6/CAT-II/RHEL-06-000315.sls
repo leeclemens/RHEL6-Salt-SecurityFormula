@@ -4,7 +4,7 @@
 
 RHEL-06-000315:
   file.append:
-    - name: /etc/modprobe.d/RHEL-06-000315
+    - name: "/etc/modprobe.d/RHEL-06-000315.conf"
     - text:
       - "install net-pf-32 /bin/true"
       - "install bluetooth /bin/true"
