@@ -7,4 +7,4 @@ RHEL-06-000083:
     - name: /etc/sysctl.conf
     - pattern: ^net\.ipv4\.conf\.all\.accept_source_route.*
     - repl: "net.ipv4.conf.all.accept_source_route = 0"
-    - append_if_not_present: True
+    - append_if_not_found: True
