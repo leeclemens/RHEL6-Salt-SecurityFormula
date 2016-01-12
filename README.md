@@ -6,7 +6,6 @@ A collection of Saltstack formulas for enforcing security compliance:
 - CAT-II  : Complete
 - CAT-III : In progress
 - Pam.D   : PENDING
-- 
 
 # Versions
 These formulas are based on a RHEL6.7 Distribution of linux. Designed around u_Redhat_6_V1RT9_STIG provided by DISA.
