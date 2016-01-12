@@ -1,6 +1,11 @@
 # RHEL6-Salt-SecurityFormula
 A collection of Saltstack formulas for enforcing security compliance:
 
+# Progress
+CAT-I   : Complete
+CAT-II  : Complete
+CAT-III : Next In progress
+
 # Versions
 These formulas are based on a RHEL6.7 Distribution of linux. Designed around u_Redhat_6_V1RT9_STIG provided by DISA.
 Copies of the document these formulas are based on can be obtained: http://iase.disa.mil/stigs/os/unix-linux/Pages/index.aspx
